@@ -230,6 +230,10 @@ img {
   margin-bottom: 30px;
 }
 
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
 
 /* Our Work */
 
@@ -320,7 +324,6 @@ img {
   width: 44px;
   height: 44px;
 
-  /* background: tomato; */
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -474,6 +477,10 @@ img {
   border-radius: 4px;
 
   padding: 6px 22px 6px 22px;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-btn:hover,
 .portfolio-btn:focus {
