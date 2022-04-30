@@ -10,6 +10,8 @@
   --portfolio-items-border-color: #EEEEEE;
   --footer-links: rgba(255, 255, 255, 0.6);
   --content-box-margin: 30px;
+
+  --animatiom-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 body {
   font-family: 'Roboto', sans-serif;
@@ -133,7 +135,6 @@ img {
   background-color: var(--background-color);
   text-align: center;
 
-  /* rgba(47, 48, 58, 0.4) */
   background-image: linear-gradient(
     rgba(47, 48, 58, 0.4),
     rgba(47, 48, 58, 0.4)), 
@@ -142,10 +143,9 @@ img {
   background-position: center;
   background-size: auto;
 
-  /* временно */
   padding-top: 200px;
   height: 600px;
-
+  width: auto;
 }
 .hero-title {
   font-style: normal;
@@ -235,6 +235,42 @@ img {
   pointer-events: none;
 }
 
+.backdrop {
+  position: fixed;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  display: flex;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.modal {
+  position: absolute;  
+  width: 528px;
+  height: 581px;  
+  background: #FFFFFF;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+  0px 1px 1px rgba(0, 0, 0, 0.14),
+  0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  display: flex;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+ }
+.modal-close-button {
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  box-sizing: border-box;
+  width: 30px;
+  height: 30px;
+  margin-left: auto;
+  margin-top: 8px;
+  margin-right: 8px;
+}
 /* Our Work */
 
 .our-work {

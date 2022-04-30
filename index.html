@@ -63,18 +63,6 @@
           </h1>
           <button class="btn" data-modal-open>Заказать услугу</button>
         </div>
-        <div class="backdrop is-hidden" data-modal>
-          <div class="modal">
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse labore at, illum enim
-              molestiae nostrum magnam? Voluptatibus quos quod atque adipisci? Exercitationem rerum,
-              aut, soluta sit in saepe aliquam, laboriosam eius esse doloremque incidunt consectetur
-              beatae maxime deleniti! Assumenda amet nisi delectus, doloribus quis dolores unde
-              aspernatur omnis officia magnam?
-            </p>
-            <button data-modal-close>Close</button>
-          </div>
-        </div>
       </section>
       <!--секция "особенности"-->
       <section class="peculiarities section">
@@ -427,7 +415,11 @@
         </div>
       </div>
     </footer>
-
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-close-button" data-modal-close>x</button>
+      </div>
+    </div>
     <script src="./js/modal.js"></script>
   </body>
 </html>
